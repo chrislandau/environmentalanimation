@@ -1,24 +1,8 @@
 
 # Environmental Animation Precedents
 
-## New Precedents
-- “Design Noir” by Dunne and Raby
-- Natalie Jeremejenko
-- Philip Beesley Installations
-- Minority Report / Matrix
-- Black Mirror
-- Cantrell's work (Information in the environment)
-- The Living
-- The Long Now
-- Jenny Sabin
-- Nicole Koltick, Design Futures Lab
-- Modelab, 
-- Center for Genomic Gastronomy
-- Gardens by the Bay
-
 #### Blender
 - ["Open Projects"](https://www.blender.org/about/projects/)
-
 
 #### Abstract Animations
 - [Big Brother](http://vimeo.com/channels/animatedshorts/103437078)
@@ -45,9 +29,20 @@
 #### Scanned Content
 - [Yeasayers on Mars](https://vimeo.com/151002965)
 
-#### WEB
-- [Snow Fall NYT Interactive](http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek)
-
+## Speculative Futures
+- “Design Noir” by Dunne and Raby
+- Natalie Jeremejenko
+- Philip Beesley Installations
+- Minority Report / Matrix
+- Black Mirror
+- Cantrell's work (Information in the environment)
+- The Living
+- The Long Now
+- Jenny Sabin
+- Nicole Koltick, Design Futures Lab
+- Modelab, 
+- Center for Genomic Gastronomy
+- Gardens by the Bay
 
 ### AR / VR / MR / CV / FX
 - [Magic Leap (MR)](https://www.magicleap.com/)
