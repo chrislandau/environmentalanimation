@@ -7,4 +7,4 @@ The operators allow for a few things:
 2. Array any selection of objects w/ the Random Array operator
 3. Change the parameters of the Attractor operator in real-time and apply to any collection of geometry you want.
 
-Other than writing these scripts, all you need to do is run the script (__ALT P__). After you run the script, do a _search for operators_ in the 3D window (__F3__). Then type "random" or "attractor". Your operator will appear. In the case of the attractor, be sure to setup a collection of attractors and to select the geometry you are scaling before running the operator.
+Other than writing these scripts, all you need to do is run the script (__ALT P__). After you run the script, do a _search for operators_ in the 3D window (__F3__). Search for "random" or "attractor". Your new operators should appear. In the case of the attractor, be sure to setup a collection of attractors and to select the geometry you are scaling before running the operator.
