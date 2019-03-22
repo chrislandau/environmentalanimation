@@ -1,0 +1,61 @@
+import bpy
+from random import random
+from math import sin, floor
+from mathutils import Vector
+
+def getOdds(r) :
+    
+    remap = 2.0 * (r * (1.0 - r)) + 0.25 * sin(r * 3.141 * 2.0)
+    
+    return remap
+    
+
+lightCol = []
+objs = bpy.data.collections['Audience'].objects
+lightPos = []
+
+i = 0
+for o in objs :
+    if ((i % 10) == 0) :
+        obj = bpy.data.collections['Audience'].objects[i]
+        if (i < 1000) :
+            bpy.ops.object.light_add(location = Vector((0, 0, -50)), radius=0.1)
+            newLight = bpy.context.selected_objects[0]
+            newLight.data.specular_factor = 0.0
+            lightCol.append(newLight)
+            
+        lightPos.append(Vector((obj.location.x, obj.location.y, obj.location.z)))
+    i += 1
+
+#i = i / 10
+    
+for light in lightCol :
+    light.color = [1.0, 1.0, 1.0, 1.0]
+    #dat = light.data
+    #dat.energy = 0.0
+    #dat.keyframe_insert(data_path="energy", frame=1)
+    light.location = Vector((0, 0, -50))
+    light.keyframe_insert(data_path="location", frame=1)
+    for j in range(50) :
+        r = random()
+        frameNum = (r * 500) + 300
+        cutoff = getOdds(r) + 0.05
+        if (cutoff >= random()) :
+            posNum = int(random() * len(lightPos))
+            light.location = lightPos[posNum]
+            light.keyframe_insert(data_path="location", frame=frameNum)
+            light.location = Vector((0, 0, -50))
+            light.keyframe_insert(data_path="location", frame=(frameNum + 2))
+        
+        #if (cutoff >= random()) :
+            #dat.energy = 50.0
+            #dat.keyframe_insert(data_path="energy",frame=frameNum)
+            #dat.energy = 0.0
+            #dat.keyframe_insert(data_path="energy",frame=(frameNum + 2))
+            
+    curves = light.animation_data.action.fcurves
+    for curve in curves :
+        for kf in curve.keyframe_points :
+            kf.interpolation = 'CONSTANT'
+            
+    

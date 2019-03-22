@@ -1,0 +1,26 @@
+import bpy
+from mathutils import Vector
+
+stadium = bpy.data.objects['StadiumCopy']
+person = bpy.data.objects['Person']
+
+audienceCol = bpy.data.collections['Audience']
+oldcenter = Vector((0, 0, 0))
+
+newCol = []
+scale = stadium.scale
+loc = stadium.location
+
+for face in stadium.data.polygons:
+    if(face.normal[2] > 0.2): #if the face is pointing up
+        
+        #add a new icosphere on a face
+        bpy.ops.mesh.primitive_ico_sphere_add(location = Vector((scale.x * face.center.x + loc.x, scale.y * face.center.y + loc.y, scale.z * face.center.z + loc.z + 2.0)))
+        newperson = bpy.context.selected_objects[0]
+        
+        # replace its data with the person data
+        newperson.data = person.data
+        newperson.rotation_euler = person.rotation_euler
+        newperson.scale = person.scale
+        newCol.append(newperson)
+        
