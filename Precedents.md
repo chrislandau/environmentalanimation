@@ -78,6 +78,7 @@
 
 #### playhou.se
 - [South Bay Sponge JCFO](https://vimeo.com/270215511)
+- [Lion Mountain Park - Tom Leader Studio](https://vimeo.com/251707916)
 
 #### Squint Opera
 - [Rio 2016](https://www.youtube.com/watch?v=acx7w2cOjyY&index=8&list=PLiVjfcIJ1aFNR33cyJWaWuWsv2EVAWGQZ)
