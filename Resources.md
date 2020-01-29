@@ -33,7 +33,7 @@
 - [bioblog](bioblog3d.wordpress.com)
 - [Blender Cookbook](wiki.blender.org/index.php/Dev:Py/Scripts/Cookbook/Code_snippets)
 - [The Next Leap: How A.I. will change the 3D industry - Andrew Price](https://www.youtube.com/watch?v=FlgLxSLsYWQ)
-- [Sorcar] (https://blenderartists.org/t/sorcar-procedural-modeling-in-blender-using-node-editor/1156769) Procedural Modeling Plugin
+- [Sorcar](https://blenderartists.org/t/sorcar-procedural-modeling-in-blender-using-node-editor/1156769) Procedural Modeling Plugin
 
 #### Open Source Software
 - Blender
